@@ -1,0 +1,17 @@
+﻿RESTinstance==1.1.0
+robotframework==6.0.2
+robotframework-appiumlibrary==2.0.0
+robotframework-databaselibrary==1.2.4
+robotframework-datadriver==1.6.1
+robotframework-excellentlibrary==1.0.0
+robotframework-mainframe3270==2.10
+robotframework-pabot==1.11
+robotframework-sapguilibrary==1.1
+robotframework-seleniumlibrary==6.1.0
+robotframework-soaplibrary==0.7
+selenium==4.9.0
+webdrivermanager
+webdriver-manager
+imap_tools
+pip_system_certs
+xmltodict

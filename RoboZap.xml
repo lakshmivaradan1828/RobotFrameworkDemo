@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="RoboZap" type="library" format="ROBOT" generated="20210727 14:42:21">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``RoboZap``.</doc>
+<init>
+<arguments>
+<arg>proxy</arg>
+<arg>port</arg>
+</arguments>
+<doc>ZAP Library can be imported with one argument
+
+Arguments:
+    - ``proxy``: Proxy is required to initialize the ZAP Proxy at that location. This MUST include the port specification as well
+    - ``port``: This is a portspecification that will be used across the suite
+
+
+Examples:
+
+| = Keyword Definition =  | = Description =  |
+
+| Library `|` RoboZap  | proxy | port |</doc>
+<tags>
+</tags>
+</init>
+<kw name="Retrieve Secret From Ssm">
+<arguments>
+<arg>secret</arg>
+<arg>region=us-west-2</arg>
+<arg>decrypt=True</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Start Gui Zap">
+<arguments>
+<arg>path</arg>
+</arguments>
+<doc>Start OWASP ZAP with a GUI
+
+Examples:
+
+| start gui zap  | path | port |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Start Headless Zap">
+<arguments>
+<arg>path</arg>
+</arguments>
+<doc>Start OWASP ZAP without a GUI
+
+Examples:
+
+| start gui zap  | path | port |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Define Context">
+<arguments>
+<arg>contextname</arg>
+<arg>url</arg>
+</arguments>
+<doc>Add Target to a context and use the context to perform all scanning/spidering operations
+
+Examples:
+
+| zap define context  | contextname  | target |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Export Report">
+<arguments>
+<arg>export_file</arg>
+<arg>export_format</arg>
+<arg>report_title</arg>
+<arg>report_author</arg>
+</arguments>
+<doc>This functionality works on ZAP 2.7.0 only. It leverages the Export Report Library to generate a report.
+Currently ExportReport doesnt have an API endpoint in python. We will be using the default ZAP REST API for this
+
+:param export_file: location to which the export needs to happen. Absolute path with the export file name and extension
+:param export_format: file extension of the exported file. Can be XML, JSON, HTML, PDF, DOC
+:param report_title: Title of the exported report
+:param report_author: Name of the Author of the report
+Examples:
+
+| zap export report | export_path | export_format |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Load Script">
+<arguments>
+<arg>script_name</arg>
+<arg>script_type</arg>
+<arg>script_engine</arg>
+<arg>script_file</arg>
+<arg>desc=Generic Description of a ZAP Script</arg>
+</arguments>
+<doc>:param script_name:
+:param script_type:
+:param script_engine:
+:param script_file:
+:param desc:
+:return:</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Open Url">
+<arguments>
+<arg>url</arg>
+</arguments>
+<doc>Invoke URLOpen with ZAP
+
+Examples:
+
+| zap open url  | target |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Run Standalone Script">
+<arguments>
+<arg>script_name</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Scan Status">
+<arguments>
+<arg>scan_id</arg>
+</arguments>
+<doc>Fetches the status for the spider id provided by the user
+
+Examples:
+
+| zap scan status  | scan_id |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Shutdown">
+<arguments>
+</arguments>
+<doc>Shutdown process for ZAP Scanner</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Spider Status">
+<arguments>
+<arg>spider_id</arg>
+</arguments>
+<doc>Fetches the status for the spider id provided by the user
+Examples:
+| zap spider status  | spider_id |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Start Ascan">
+<arguments>
+<arg>context</arg>
+<arg>url</arg>
+<arg>policy=Default Policy</arg>
+</arguments>
+<doc>Initiates ZAP Active Scan on the target url and context
+
+Examples:
+
+| zap start ascan  | context  | url |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Start Spider">
+<arguments>
+<arg>target</arg>
+<arg>url</arg>
+</arguments>
+<doc>Start ZAP Spider with ZAP's inbuilt spider mode
+
+Examples:
+
+| zap start spider  | target  | url |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Write To Json File">
+<arguments>
+<arg>base_url</arg>
+</arguments>
+<doc>Fetches all the results from zap.core.alerts() and writes to json file.
+
+Examples:
+
+| zap write to json  | scan_id |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Write To Orchy">
+<arguments>
+<arg>report_file</arg>
+<arg>secret</arg>
+<arg>access</arg>
+<arg>hook_uri</arg>
+</arguments>
+<doc>Generates an XML Report and writes said report to orchestron over a webhook.
+
+Mandatory Fields:
+- Report_file: Absolute Path of Report File - JSON or XML
+- Token: Webhook Token
+- hook_uri: the unique URI to post the XML Report to
+
+Examples:
+
+| zap write to orchy  | report_file_path | token | hook_uri</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Zap Write To S3 Bucket">
+<arguments>
+<arg>filename</arg>
+<arg>bucket_name</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>

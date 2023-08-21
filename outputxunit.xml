@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Loops and conditions" tests="5" errors="0" failures="0" skipped="0" time="0.105" timestamp="2023-03-14T08:18:03.729000">
+<testsuite name="FOR loopTest" tests="3" errors="0" failures="0" skipped="0" time="0.031" timestamp="2023-03-14T08:18:03.758000">
+<testcase classname="Loops and conditions.FOR loopTest" name="For-Loop-In-Range" time="0.006">
+</testcase>
+<testcase classname="Loops and conditions.FOR loopTest" name="For-Loop-Elements" time="0.008">
+</testcase>
+<testcase classname="Loops and conditions.FOR loopTest" name="Repeat-Action" time="0.003">
+</testcase>
+</testsuite>
+<testsuite name="similiar to WHILE loopTest" tests="2" errors="0" failures="0" skipped="0" time="0.040" timestamp="2023-03-14T08:18:03.791000">
+<testcase classname="Loops and conditions.similiar to WHILE loopTest" name="For-Loop-Exiting" time="0.007">
+</testcase>
+<testcase classname="Loops and conditions.similiar to WHILE loopTest" name="For-Loop-in-Range-Exiting" time="0.026">
+</testcase>
+<properties>
+<property name="Documentation" value="Robot Framework does not have a while loop.&#10;You must use FOR-loop and &quot;exit for loop if&quot; keyword to exit.&#10;It will run a finite times, but if you select large enough number in range, it is close enough for practical purposes."/>
+</properties>
+</testsuite>
+</testsuite>

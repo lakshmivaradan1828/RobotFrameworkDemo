@@ -1,0 +1,49 @@
+name: $(majorMinorVersion).$(patchVersion)
+
+trigger:
+  branches:
+    include: 
+    - main
+  paths:
+    exclude:
+    - .pipelines/*
+
+
+variables:
+  majorMinorVersion: 1.0
+  patchVersion: $[counter(variables['majorMinorVersion'], 0)]
+
+schedules:
+- cron: 0 0/6 * * * # cron syntax defining a schedule
+  displayName: scheduling the Robo Tests # friendly name given to a specific schedule
+  branches:
+    include: [ screens ] # which branches the schedule applies to
+    exclude: [ migration ] # which branches to exclude from the schedule
+  always: true  # whether to always run the pipeline or only if there have bee
+
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: VolvoGroup-Internal/devsecops-shared-azuredevops
+      ref: main
+      endpoint: VolvoGroup-Internal
+ 
+pool:   
+  vmImage: windows-latest
+
+steps:
+- template: templates/tests/robot/run.yaml@templates
+  parameters:
+    displayName: UITests
+    testsResourcedRepositoryName: self
+    numberOfProcesses: $(parallelNumber)
+    browser: chrome
+    headless: $(headless)
+    incognito: flase
+    dockerGrid: false
+    testSuite: $(testSuite)
+    useProxy: false
+    solidifyExtensionEnabled: true
+    testPlanName: RobotFramework_TestPlan
+    configuration: 'TEST'

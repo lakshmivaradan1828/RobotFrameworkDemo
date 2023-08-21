@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testOpsRobotFramework" tests="16" errors="0" failures="15" skipped="0" time="3.500">
+<testcase classname="testOpsRobotFramework.TestSuites.Keywords usage.EmbeddingArgumentsIntoKeywordTest" name="Basic syntax" time="0.025">
+<failure message="WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.Keywords usage.EmbeddingArgumentsIntoKeywordTest" name="Behavior-driven" time="0.061">
+<failure message="WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.Keywords usage.EmbeddingArgumentsIntoKeywordTest" name="Multiple arguments together" time="0.003">
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="invalid user invalid pass" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="invalid user empty pass" time="0.000">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="empty user and valid user instead pass" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="empty login and password" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="vlaidUserInvalidPass" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="invalid user valid pass" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="empty user valid pass" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="valid user empty pass" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.InvalidLoginTest" name="empty user invalid pass" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.RegistrationTest" name="Valid registration" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.RegistrationTest" name="Registration with same email" time="0.001">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.TestTemplateUsageExamples.RegistrationTest" name="Registration another user" time="0.000">
+<failure message="Parent suite setup failed:&#10;WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+<testcase classname="testOpsRobotFramework.TestSuites.Libraries usage examples.SeleniumLibrary example-registrationTest" name="Registration" time="0.021">
+<failure message="WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&#10;" type="AssertionError"></failure>
+</testcase>
+</testsuite>
