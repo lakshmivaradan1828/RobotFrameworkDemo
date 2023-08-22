@@ -11,6 +11,7 @@ ${checkbox}    id:bmwcheck
 ${radiobutton}    id:bmwradio
 ${radiobutton_grpname}    cars
 ${radiobutton_value}    bmw
+${radiobutton_value1}    audi
 
 *** Keywords ***
 Select Bylabel
