@@ -16,8 +16,8 @@ Login to X
     Create a Twitter post    Super happy to participate in #TESTAUTOTHON2023 organised by @stepin_forun in partnership with @verity_software. This event is running in parallel with #STEPINSUMMIT2023
     
 
-    Create a Twitter post    THe participation is amazing and about 35 teams are participating in this #TESTAUTOTHON2023. Volvo group @stepin_forum@verity_software
+    #Create a Twitter post    THe participation is amazing and about 35 teams are participating in this #TESTAUTOTHON2023. Volvo group @stepin_forum@verity_software
 
-    Search Twitter post
+    #Search Twitter post
     LogOut to UITwitter 
       
