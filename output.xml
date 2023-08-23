@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.4 on win32)" generated="20230823 12:51:36.182" rpa="false" schemaversion="3">
+<suite id="s1" name="Twitterapi" source="c:\TestAutothon\RobotFrameworkDemo\testsuites\rest\twitterapi.robot">
+<test id="s1-t1" name="Post Tweet" line="15">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<arg>Authorization=OAuth oauth_consumer_key="${CONSUMER_KEY}",oauth_token="${ACCESS_TOKEN}",oauth_signature_method="${SIGNATURE_METHOD}",oauth_timestamp="${TIMESTAMP}",oauth_nonce="${NONCE}",oauth_version="${OAUTH_VERSION}",oauth_signature="${OAUTH_SIGNATURE}"</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230823 12:51:36.406" level="INFO">${headers} = {'Content-Type': 'application/json', 'Authorization': 'OAuth oauth_consumer_key="Qg16Q9qLOiCcs8UuTlwqwhgxk",oauth_token="4557504739-uQyqw5oJJQwyl9T06pWeNv1RF5mU5fNBRSEBvSZ",oauth_signature_method="HMA...</msg>
+<status status="PASS" starttime="20230823 12:51:36.405" endtime="20230823 12:51:36.409"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${payload}</var>
+<arg>text=Hello World!</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230823 12:51:36.411" level="INFO">${payload} = {'text': 'Hello World!'}</msg>
+<status status="PASS" starttime="20230823 12:51:36.410" endtime="20230823 12:51:36.411"/>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
+<var>${response}</var>
+<arg>${API_URL}</arg>
+<arg>json=${payload}</arg>
+<arg>headers=${headers}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<msg timestamp="20230823 12:51:36.412" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20230823 12:51:36.415" level="FAIL">Keyword 'RequestsLibrary.Post Request' missing value for argument 'uri'.</msg>
+<status status="FAIL" starttime="20230823 12:51:36.412" endtime="20230823 12:51:36.416"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Response Status Code: ${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230823 12:51:36.417" endtime="20230823 12:51:36.417"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Response Content: ${response.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230823 12:51:36.418" endtime="20230823 12:51:36.419"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20230823 12:51:36.420" endtime="20230823 12:51:36.421"/>
+</kw>
+<status status="FAIL" starttime="20230823 12:51:36.403" endtime="20230823 12:51:36.422">Keyword 'RequestsLibrary.Post Request' missing value for argument 'uri'.</status>
+</test>
+<status status="FAIL" starttime="20230823 12:51:36.191" endtime="20230823 12:51:36.429"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Twitterapi">Twitterapi</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230823 12:51:36.412" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+</errors>
+</robot>
